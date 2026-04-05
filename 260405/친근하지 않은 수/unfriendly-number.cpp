@@ -14,9 +14,10 @@ class numFind : public numIn{
     int count = 0;
 public:
     void numF() {
-        if(n%2==0) count++;
-        if(n%3==0) count++;
-        if(n%5==0) count++;
+        for(int i=1; i<=n; i++){
+            if(i%2==0||i%3==0||i%5==0) continue;
+            else count++;
+            }
         cout<<count;
        }
     void Run() {
