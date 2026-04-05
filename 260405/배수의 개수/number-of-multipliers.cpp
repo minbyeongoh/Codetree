@@ -33,5 +33,6 @@ int main() {
     doubleCount *p = new multiplyCount;
     p->multiply(3);
     p->multiply(5);
+    delete p;
     return 0;
 }
