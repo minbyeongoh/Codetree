@@ -1,7 +1,8 @@
 using System;
 
 class CountFiveMul {
-    int arr[,] = new int[4,4], count = 0;
+    int[,] arr = new int[4,4];
+    int count = 0;
     public void ReadFindArr() {
         for(int i=0; i<4; i++) {
             string[] tmp = Console.ReadLine().Split();
@@ -20,6 +21,6 @@ public class Codetree
     {
         // Please write your code here.
         CountFiveMul go = new CountFiveMul();
-        go.ReadFindArr;
+        go.ReadFindArr();
     }
 }
